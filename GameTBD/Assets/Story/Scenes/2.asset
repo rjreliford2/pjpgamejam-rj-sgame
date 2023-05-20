@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76524aaacc0ad254f99cd21368060e90, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  sentences:
+  - text: It's show time!
+    speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+  - text: Not yet, Dray
+    speaker: {fileID: 11400000, guid: 6e10063bc3bbc884a8e908c17fe04258, type: 2}
+  background: {fileID: 21300000, guid: 31492450edf8cf749a84e5c5c4259410, type: 3}
+  nextScene: {fileID: 0}
