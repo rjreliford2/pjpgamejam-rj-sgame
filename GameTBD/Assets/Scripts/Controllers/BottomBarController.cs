@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System.Diagnostics.Contracts;
 
 public class BottomBarController : MonoBehaviour
 {
@@ -11,12 +12,40 @@ public class BottomBarController : MonoBehaviour
     private int sentenceIndex = -1;
     private StoryScene currentScene;
     private State state = State.COMPLETED;
+    private Animator animator;
+    private bool isHidden = false;
 
     private enum State
     {
         PLAYING, COMPLETED
     }
-    
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
+    public void Hide()
+    {
+        if (!isHidden)
+        {
+            animator.SetTrigger("Hide");
+            isHidden = true;
+        }
+       
+    }
+
+    public void Show()
+    {
+        animator.SetTrigger("Show");
+        isHidden = false;
+    }
+
+    public void ClearText()
+    {
+        barText.text = "";
+    }
+
     public void PlayScene(StoryScene scene)
     {
         currentScene = scene;
@@ -52,7 +81,9 @@ public class BottomBarController : MonoBehaviour
             yield return new WaitForSeconds(0.05f);
             if(++wordIndex == text.Length)
             {
-                state = State.COMPLETED ; 
+                state = State.COMPLETED ;
+                GameController gameController = FindObjectOfType<GameController>();
+                gameController.OnDialogueCompleted();
                 break;
             }
         }
