@@ -14,3 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speakerName: Dray
   textColor: {r: 0.40359077, g: 0.07594631, b: 0.754717, a: 1}
+  sprites:
+  - {fileID: 21300000, guid: 4efd112ad6b32fb49aab21c1337344f4, type: 3}
+  - {fileID: 21300000, guid: 968772c4a46a5bd45884a445c90ab889, type: 3}
+  prefab: {fileID: 6356006490774810675, guid: 0c9c9559e03cfb94db8ff09405fb13a8, type: 3}

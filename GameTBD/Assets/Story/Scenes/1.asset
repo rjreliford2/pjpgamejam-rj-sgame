@@ -15,11 +15,25 @@ MonoBehaviour:
   sentences:
   - text: Hello World
     speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 400, y: 0}
+      moveSpeed: 0
   - text: Hello Dray
     speaker: {fileID: 11400000, guid: 6e10063bc3bbc884a8e908c17fe04258, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   - text: How is everything?
     speaker: {fileID: 11400000, guid: 6e10063bc3bbc884a8e908c17fe04258, type: 2}
+    actions: []
   - text: Good
     speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+    actions: []
   background: {fileID: 21300000, guid: b652b51a34af2114bae2d29e8fc62465, type: 3}
   nextScene: {fileID: 11400000, guid: 1feb162766dbfaa4a8969fd6d7ab8634, type: 2}

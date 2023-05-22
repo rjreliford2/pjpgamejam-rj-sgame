@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
     
     public GameScene currentScene;
     public BottomBarController bottomBar;
-    public BackgroundController backgroundController;
+    public SpriteSwitcher backgroundController;
     public ChooseController chooseController;
 
     private bool isDialoguePlaying = false;

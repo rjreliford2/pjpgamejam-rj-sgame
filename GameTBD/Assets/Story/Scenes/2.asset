@@ -15,7 +15,27 @@ MonoBehaviour:
   sentences:
   - text: it's Show time
     speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
-  - text: Wow it's crazy
+    actions:
+    - speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+      spriteIndex: 0
+      actionType: 1
+      coords: {x: 400, y: 0}
+      moveSpeed: 0
+  - text: Wow the weather is amazing
     speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+      spriteIndex: 0
+      actionType: 2
+      coords: {x: 0, y: 0}
+      moveSpeed: 1
+  - text: I think I'm gonna go ahead and take a nap
+    speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+    actions:
+    - speaker: {fileID: 11400000, guid: b3e17b337e14521498fac12a13759281, type: 2}
+      spriteIndex: 0
+      actionType: 3
+      coords: {x: 0, y: 0}
+      moveSpeed: 0
   background: {fileID: 21300000, guid: 31492450edf8cf749a84e5c5c4259410, type: 3}
   nextScene: {fileID: 0}
